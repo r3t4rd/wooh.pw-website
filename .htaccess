@@ -1,7 +1,6 @@
 #yolo
 Order deny,allow
 Allow from all
-
 RedirectMatch 403 ^.*/\.f/.*
 
 #as is
@@ -12,10 +11,5 @@ DirectoryIndex index.html
 
 #www to non-www
 RewriteBase /
-RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
-RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
-
-#things
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule (.*) dl.php?$1 [NC,L]
+RewriteCond %{HTTP_HOST} ^www.wooh.pw [NC]
+RewriteRule ^(.*)$ https://wooh.pw [R=301,L]
