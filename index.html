@@ -1,48 +1,68 @@
 <!DOCTYPE html>
-<html >
-	<head>
-		<meta charset="UTF-8">
-		<title>wooh</title> 
-		<meta name="description" content="wooh. as is."> 
-		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;800&display=swap" rel="stylesheet">
-		<link rel='stylesheet prefetch' href='./f/w.css'>
-		<link rel="shortcut icon" href="./f/w.ico">
-		<meta property="og:title" content="wooh. as is."/>
-		<meta property="og:description" content="no one asked."/>
-		<meta property="og:image" content="http://wooh.pw/f/w.png"/>
-		<meta property="og:type" content="article"/>
-		<meta property="og:url" content= "http://wooh.pw/"/>
-	</head>
-	<body onload="fFakeload()">
-		<div class="part1">
-			<div class="main" id="fake">
-				<div class="main_text">
-					<span class="main_h2">wooh</span>
-					<span class="main_h1">ワオ</span>
-					<span class="main_h3">project</span>
-				</div>
-				<a encode="javascript" href="mailto:kira_mirele@pm.me" class="main_mail">kira_mirele@pm.me</a>
-				<span class="main_desc">
-						06/08/2020 &middot; 01.wipeeverything
-						<br>
-						06/10/2020 &middot; 02.stage2
-				</span>
-			</div>
-		</div>
-	<!--
-		<div class="part2">
-			not yet.
-			what are you trying to find?
-		</div>
-	-->
-	<script>
-		var fakeload;
-		function fFakeload() {
-			fakeload = setTimeout(fStopFakeload, 200)
-		}
-		function fStopFakeload(){
-			document.getElementById("fake").style.opacity = "1"
-		}
-	</script>
-	</body>
+<!-- What are you looking for? -->
+<html>
+    <head>
+        <title>wooh.pw &middot; blazing!</title>
+        <meta charset="utf-8">
+        <meta name="title" content="wooh.pw &middot; blazing!">
+        <meta name="description" content="Blazing Garry's mod experience. 🚀">
+
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://wooh.pw/">
+        <meta property="og:title" content="wooh.pw &middot; blazing!">
+        <meta property="og:description" content="Blazing Garry's mod experience. 🚀">
+        <meta property="og:image" content="https://wooh.pw/resources/images/other/banner.jpg">
+
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image">
+        <meta property="twitter:url" content="https://wooh.pw/">
+        <meta property="twitter:title" content="wooh.pw &middot; blazing!">
+        <meta property="twitter:description" content="Blazing Garry's mod experience. 🚀">
+        <meta property="twitter:image" content="https://wooh.pw/resources/images/other/banner.jpg">
+
+        <!-- styles etc -->
+        <link rel="stylesheet" style="text/css" href="general.css" />
+        <link rel="icon" href="resources/favicon.ico" sizes="16x16 32x32 48x48 64x64"/>
+        <link rel="stylesheet" style="text/css"    href="resources/colors.css" />
+        <script>var mascotPath = "resources/images/mascots/";</script>
+        <script src="resources/mascots.js"></script>
+        <script src="js/jquery-2.1.1.min.js"></script>
+        <script src="js/mascots-control.js"></script>
+        <link data-n-head="1" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:300,400,600,700">
+    </head>
+    <body>
+        <main style="min-width: 599px; min-height:400px"> 
+        <!--
+        #181818 (old back) 
+        #1D1F21(background) 
+        #81A2BE(blue) 
+        #70293B(red) -->
+            <header>
+                <h1 style="text-shadow: 0.1em 0.1em 0.2em black;">wooh.<span style ="color: #70293B;"class="name-highlight">pw</span></h1>
+                <p class="subtitle">blazing Garry's mod experience. 🚀</p>
+            </header>
+            <nav>
+                <ul class="buttonList">  
+                    <li class="button button_grey buttonArrow"><a href="#">servers</a>
+                        <ul>
+                            <li><a href="https://a.wooh.pw">tokyo ghoul rp</a></li>
+                            <li><a href="https://s.wooh.pw">classic yandere rp</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="columnList">
+                    <li class="column column_pink">
+                        <a>contacts</a>
+                        <ul>
+                            <li><a href="http://discord.gg/wooh">discord</a></li>
+                            <li><a href="https://github.com/woohpw">gitHub</a></li>
+                            <li><a href="https://vk.com/woohpw">vk group</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </main>
+        
+    </body>
 </html>
